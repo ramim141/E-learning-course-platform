@@ -168,3 +168,4 @@ yarn-error.log*
 # Temporary files
 *.tmp
 *.temp 
+EMAIL_TEMPLATES_README.md 

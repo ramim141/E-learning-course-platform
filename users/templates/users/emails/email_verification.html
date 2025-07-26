@@ -1,0 +1,50 @@
+{% extends 'users/emails/base_email.html' %}
+
+{% block title %}Verify Your Email - E-Learning Platform{% endblock %}
+
+{% block content %}
+<div class="greeting">Hello {{ user_name }}! 👋</div>
+
+<div class="message">
+    <p>Welcome to our <strong>E-Learning Platform</strong>! We're excited to have you join our community of learners.</p>
+    
+    <p>To get started and access all the amazing learning resources, please verify your email address by clicking the button below:</p>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+    <a href="{{ verification_link }}" class="cta-button">
+        ✨ Verify My Email Address
+    </a>
+</div>
+
+<div class="message">
+    <p>This verification link will expire in 24 hours for security reasons. If you don't verify your email within this time, you'll need to request a new verification link.</p>
+    
+    <p>If the button above doesn't work, you can copy and paste this link into your browser:</p>
+    
+    <div style="background: #f7fafc; padding: 15px; border-radius: 8px; margin: 20px 0; word-break: break-all; font-family: monospace; font-size: 14px; color: #4a5568;">
+        {{ verification_link }}
+    </div>
+</div>
+
+<div class="warning">
+    <div class="warning-text">
+        <strong>🔒 Security Notice:</strong> Never share this verification link with anyone. Our team will never ask for your verification link or password.
+    </div>
+</div>
+
+<div class="message">
+    <p>Once verified, you'll be able to:</p>
+    <ul style="margin: 15px 0; padding-left: 20px; color: #4a5568;">
+        <li>Access all courses and learning materials</li>
+        <li>Track your learning progress</li>
+        <li>Connect with instructors and fellow students</li>
+        <li>Earn certificates upon course completion</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%); border-radius: 12px;">
+    <p style="margin: 0; color: #2f855a; font-weight: 600;">🎓 Ready to start your learning journey?</p>
+    <p style="margin: 5px 0 0 0; color: #38a169; font-size: 14px;">Verify your email and unlock unlimited learning possibilities!</p>
+</div>
+{% endblock %} 

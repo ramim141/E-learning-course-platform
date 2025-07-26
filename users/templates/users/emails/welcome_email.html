@@ -1,0 +1,61 @@
+{% extends 'users/emails/base_email.html' %}
+
+{% block title %}Welcome to E-Learning Platform!{% endblock %}
+
+{% block content %}
+<div class="greeting">Welcome {{ user_name }}! 🎉</div>
+
+<div class="message">
+    <p>Congratulations! Your email has been successfully verified and your account is now active on our <strong>E-Learning Platform</strong>.</p>
+    
+    <p>You're now ready to embark on an exciting learning journey with access to thousands of courses, expert instructors, and a vibrant community of learners.</p>
+</div>
+
+<div style="text-align: center; margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%); border-radius: 15px;">
+    <h3 style="margin: 0 0 15px 0; color: #2f855a; font-size: 20px;">🚀 What's Next?</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: left;">
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="font-size: 24px; margin-bottom: 8px;">📚</div>
+            <h4 style="margin: 0 0 8px 0; color: #2d3748;">Browse Courses</h4>
+            <p style="margin: 0; font-size: 14px; color: #4a5568;">Explore our extensive library of courses across various subjects and skill levels.</p>
+        </div>
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="font-size: 24px; margin-bottom: 8px;">👨‍🏫</div>
+            <h4 style="margin: 0 0 8px 0; color: #2d3748;">Learn from Experts</h4>
+            <p style="margin: 0; font-size: 14px; color: #4a5568;">Get insights from industry professionals and experienced educators.</p>
+        </div>
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="font-size: 24px; margin-bottom: 8px;">🏆</div>
+            <h4 style="margin: 0 0 8px 0; color: #2d3748;">Earn Certificates</h4>
+            <p style="margin: 0; font-size: 14px; color: #4a5568;">Complete courses and earn certificates to showcase your skills.</p>
+        </div>
+    </div>
+</div>
+
+<div class="message">
+    <p>Here are some quick tips to get you started:</p>
+    <ul style="margin: 15px 0; padding-left: 20px; color: #4a5568;">
+        <li>Complete your profile to personalize your learning experience</li>
+        <li>Set learning goals to track your progress</li>
+        <li>Join discussion forums to connect with other learners</li>
+        <li>Download our mobile app for learning on the go</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+    <a href="http://localhost:1573/dashboard" class="cta-button">
+        🎯 Start Learning Now
+    </a>
+</div>
+
+<div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
+    <p style="margin: 0; font-weight: 600; font-size: 18px;">💡 Pro Tip</p>
+    <p style="margin: 5px 0 0 0; opacity: 0.9;">Set aside dedicated time each day for learning. Even 30 minutes can make a huge difference!</p>
+</div>
+
+<div class="message">
+    <p>If you have any questions or need assistance, our support team is here to help. Don't hesitate to reach out!</p>
+    
+    <p>Happy learning! 📖✨</p>
+</div>
+{% endblock %} 
