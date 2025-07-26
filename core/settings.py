@@ -16,7 +16,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG=False
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', '.now.sh', 'https://e-learning-course-platform-git-main-ramims-projects-51e1b5d7.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', '.now.sh', 'https://e-learning-course-platform.vercel.app']
 
 
 # Application definition
